@@ -1,16 +1,19 @@
 [project]
 name = "mildmouse"
 version = "0.1.0"
-description = "Add your description here"
+description = "Google Custom Search API client"
 readme = "README.md"
 authors = [
     { name = "Taylor Monacelli", email = "taylormonacelli@gmail.com" }
 ]
-requires-python = ">=3.13"
-dependencies = []
+requires-python = ">=3.12"
+dependencies = [
+    "python-dotenv>=1.0.0",
+    "platformdirs>=3.0.0",
+]
 
 [project.scripts]
-mildmouse = "mildmouse:main"
+mildmouse = "mildmouse.cli:main"
 
 [build-system]
 requires = ["hatchling"]
